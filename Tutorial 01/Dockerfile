@@ -3,7 +3,7 @@ FROM ubuntu:focal
 # Set environment variables to avoid interactive prompts during package installation
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Set user and its password
+# Set user and its password (this is not a good practice and will trigger a warning)
 ARG USER="user"
 ARG PASSWORD="password"
 
